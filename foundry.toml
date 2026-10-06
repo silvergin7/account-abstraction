@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+via_ir = true
+optimizer = true
+fs_permissions = [{ access = "read", path = "./zkout" }]
+remappings = [
+    "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts",
+    "account-abstraction/=lib/account-abstraction/contracts/",
+    "forge-std/=lib/forge-std/src/",
+    "foundry-era-contracts/=lib/foundry-era-contracts/src/",
+]
+
+[profile.default.zksync]
+enable_eravm_extensions = true
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

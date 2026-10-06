@@ -1,0 +1,28 @@
+# Compiler / test artifacts
+cache/
+out/
+zkout/
+
+# Logs
+.logs/
+*.log
+
+# Foundry broadcast (may contain run metadata; regenerate locally)
+broadcast/
+
+# Docs (generated)
+docs/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Misc
+.ignore/
